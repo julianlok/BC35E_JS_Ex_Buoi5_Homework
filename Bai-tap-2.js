@@ -22,7 +22,12 @@ function preCalCable (connect,channelNo) {
             break;
     }
     return totalAmount;
-}
+};
+
+function hideInputConnect() {
+    var e = document.getElementById("kindOfCustomer").value;
+    document.getElementById("connect").style.display = "enterprise" == e ? "block" : "none";
+};
 
 function showCableResult (result2) {
     document.getElementById("divCable").style.display = "block";
@@ -46,30 +51,4 @@ function calCable() {
 
     //đầu ra in ra kết quả
     showCableResult (result2)
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function hideInputConnect() {
-    var e = document.getElementById("kindOfCustomer").value;
-    document.getElementById("connect").style.display = "enterprise" == e ? "block" : "none";
-}
-
-
+};
