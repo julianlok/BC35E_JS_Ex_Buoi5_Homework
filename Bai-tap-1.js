@@ -19,12 +19,12 @@ function preCalTax (taxableIncome) {
     }
 
     return tax;
-}
+};
 
 function showTaxResult (result1) {
     document.getElementById("divTax").style.display = "block";
     document.getElementById("showTax").innerHTML = result1;
-}
+};
 
 function calTax () {
     //đầu vào
@@ -44,4 +44,4 @@ function calTax () {
 
     //Đầu ra: xuất ra kết quả
     showTaxResult(result1)
-}
+};
