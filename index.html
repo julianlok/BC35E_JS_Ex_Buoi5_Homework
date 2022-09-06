@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>BC35E-Homework-EX-B5-LTL</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1 style="font-size: 3rem; text-align: center">
+        Javascript - Ex - Homework - B5
+    </h1>
+    <div class="container">
+        <div class="row">
+            <!-- Bài tập 1 -->
+            <div class="col-lg-6 mt-3">
+                <div class="card">
+                    <div class="card-header">
+                        Bài tập 1: Tính tiền thuế thu nhập cá nhân
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for=""></label>
+                            <input type="text" name="" id="fullName" class="form-control" placeholder="Nhập họ tên">
+                        </div>
+                        <div class="form-group">
+                            <label for=""></label>
+                            <input type="number" name="" id="yearlySalary" class="form-control" placeholder="Nhập tổng thu nhập năm">
+                        </div>
+                        <div class="form-group">
+                            <label for=""></label>
+                            <input type="number" name="" id="dependent" class="form-control" placeholder="Nhập số người phụ thuộc">
+                        </div>
+                        <button class="btn btn-primary mt-1" onclick="calTax()">
+                            Tính tiền thuế
+                        </button>
+                    </div>
+                    <div id="divTax" class="card-footer text-muted" style="display: none;">
+                        <p id="showTax" class="result mb-0"></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Bài tập 1 -->
+            <!-- Bài tập 2 -->
+            <div class="col-lg-6 mt-3">
+                <div class="card">
+                    <div class="card-header">
+                        Bài tập 2: Tính tiền cáp
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                          <label for=""></label>
+                          <select class="form-control" name="" id="kindOfCustomer" onchange="hideInputConnect()">
+                            <option>Chọn loại khách hàng</option>
+                            <option value="civilian">Nhà dân</option>
+                            <option value="enterprise">Doanh nghiệp</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                            <label for=""></label>
+                            <input type="text" name="" id="cusCode" class="form-control" placeholder="Nhập mã khách hàng">
+                        </div>
+                        <div class="form-group">
+                            <label for=""></label> 
+                            <input type="number" name="" id="channelNo" class="form-control" placeholder="Nhập số kênh cao cấp">
+                        </div>
+                        <div class="form-group">
+                            <label for=""></label>
+                            <input type="number" name="" id="connect" class="form-control" placeholder="Nhập số kết nối" style="display: none;">
+                        </div>
+                        <button class="btn btn-primary mt-1" onclick="calCable()">
+                            Tính tiền cáp
+                        </button>
+                    </div>
+                    <div id="divCable" class="card-footer text-muted" style="display: none;">
+                        <p id="showCable" class="result mb-0"></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Bài tập 2 -->
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./Bai-tap-1.js"></script>
+    <script src="./Bai-tap-2.js"></script>
+</body>
+
+</html>

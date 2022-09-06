@@ -1,0 +1,9 @@
+.result {
+    font-weight: bold;
+    color: red;
+}
+
+.card-header {
+    color: blue;
+    font-weight: bold;
+}
